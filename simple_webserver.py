@@ -14,8 +14,8 @@ esp.osdebug(None)
 import gc
 gc.collect()
 
-ssid = 'SKY5C183'
-password = 'DXERASAA'
+ssid = '<ssid>'
+password = '<password>'
 
 station = network.WLAN(network.STA_IF)
 
