@@ -125,3 +125,26 @@ ap_if = network.WLAN(network.AP_IF)
 ap_if.config(essid="<AP_NAME>", authmode=network.AUTH_WPA_WPA2_PSK, password="<password>")
 
 ```
+
+
+### Writing and reading files
+
+MicroPython on the ESP8266 supports the standard way of accessing files in Python, using the built-in open() function.
+
+To create a file try:
+
+```python
+>>> f = open('data.txt', 'w')
+>>> f.write('some data')
+9
+>>> f.close()
+```
+
+The “9” is the number of bytes that were written with the write() method. Then you can read back the contents of this new file using:
+
+```python
+>>> f = open('data.txt')
+>>> f.read()
+'some data'
+>>> f.close()
+```
