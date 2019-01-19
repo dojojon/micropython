@@ -47,13 +47,6 @@ import os
 os.listdir()
 ```
 
-### Write file
-
-```python
-import os
-os.listdir()
-```
-
 ### Check the firmware
 Useful if things are not working
 
@@ -62,7 +55,7 @@ import esp
 esp.check_fw()
 ```
 
-### free up memory
+### Free up memory
 
 ```python
 import gc
